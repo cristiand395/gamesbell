@@ -1,0 +1,10 @@
+{
+  "menu": {
+    "login": "Login",
+    "signup": "Sign Ups"
+  },
+  "games": [{
+      "title": "Heads Up"
+  }
+  ]
+}

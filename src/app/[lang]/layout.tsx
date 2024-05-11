@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import { Providers } from "@/providers";
 import Navbar from "@/components/navbar";
 
@@ -18,10 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={inter.className}>
+      <body className="">
         <Providers>
           <Navbar />
-          {children}
+          <main className="flex justify-center w-full items-center">
+            <div className="px-6 max-w-[1024px] w-full">
+              {children}
+            </div>
+          </main>
         </Providers>
       </body>
     </html>
